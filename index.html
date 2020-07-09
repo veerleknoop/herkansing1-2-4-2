@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VeerleKnoopMMT1.4Herkansing</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+    <link href="css/reset.css " rel="stylesheet">
+    <link href="css/style.css " rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<header>
+
+    <nav id="nav">
+        <div class="container">
+            <span class="animatie">etfliX</span>
+            <span class="animatie2">N</span>
+
+        </div>
+
+        <ul>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Pricing</a></li>
+            <li> <a href="#">Contact</a></li>
+            <div id="login"></div>
+
+
+        </ul>
+
+    </nav>
+
+
+    <div id="tekstbox">
+        <div id="netflixtitel">A NETFLIX ORIGINAL</div>
+        <div id="netflixtekst">Something strange is happening in Hawkins </div>
+        <div id="netflixtekst2">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.</div>
+        <div id="tryfree">TRY FREE</div>
+    </div>
+
+    <div id="placeholder">
+        <div class="color-overlay"></div>
+        <button onclick="show_hide()" class="watch-trailer"></button>
+    </div>
+
+
+    <div class="modal modal--hidden">
+        <div onclick="show_hide()" class="modal-close">
+            <span id="close">X</span>
+            <div class="video-player" id="player-1">
+                <video id="my-video1" class="video-js" controls preload="auto" poster="../herkansing1.4.2/img/tumbnail.JPG" data-setup="{}" autoplay controls muted>
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        
+                    
+                        <p class="vjs-no-js">
+                         To view this video please enable JavaScript, and consider upgrading to a
+                         web browser that
+                          <a href="https://videojs.com/html5-video-support/" target="_blank"
+                       >supports HTML5 video</a>
+                         </p>
+                       
+                     </video>
+                <a class="button-visibility video-forward"></a>
+                <a class="button-visibility video-play-btn"></a>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+</header>
+
+<body>
+
+    <div id="stop">Stop doing stuff, start watching</div>
+    <div id="watch">200+ of the best shows, waiting to be watched</div>
+
+    <div class="playlist">
+        <div class="video-player" id="player-2">
+            <video id="my-video2" class="video-js" controls preload="auto" poster="../herkansing1.4.2/img/tumb2.jpg" width="640" height="264" data-setup="{}">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type=video/mp4>
+       
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a>
+            </p>
+          </video>
+            <a class="button-visibility video-forward"></a>
+            <a class="button-visibility2 video-play-btn"></a>
+
+
+        </div>
+
+
+        <div class="video-player" id="player-3">
+            <video id="my-video3" class="video-js" controls preload="auto" poster="../herkansing1.4.2/img/tumb3.jpg" width="640" height="264" data-setup="{}">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"type=video/mp4>
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a>
+            </p>
+          </video>
+            <a class="button-visibility video-forward"></a>
+            <a class="button-visibility2 video-play-btn"></a>
+
+        </div>
+
+        <div class="video-player" id="player-4">
+            <video id="my-video4" class="video-js" controls preload="auto" poster="../herkansing1.4.2/img/tumb4.jpg" width="640" height="264" data-setup="{}">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type=video/mp4>
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a >
+            </p>
+            </video>
+            <a class="button-visibility video-forward"></a>
+            <a class="button-visibility2 video-play-btn"></a>
+
+        </div>
+    </div>
+
+
+    <div id="tftekst">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.</div>
+    <div id="tfknop">Try Free</div>
+
+    <footer>
+
+
+        <div id="choose">Choose the plan that’s right for you</div>
+
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1"> Basic</a></li>
+                <li><a href="#tabs-2">Standard</a></li>
+                <li><a href="#tabs-3">Premium</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="tab_text_box">
+
+                    <h2>Cancel at any time</h2>
+                    <h2>Unlimited films and TV</h2>
+                    <h2>Screens</h2>
+                    <h2>Resolution</h2>
+                    <h2>Video quality</h2>
+                    <h2>Monthly price</h2>
+
+                </div>
+                <div class="tab_text_box2">
+                    <h2>V</h2>
+                    <h2>-</h2>
+
+                    <h2>3</h2>
+                    <h2>HD</h2>
+                    <h2>Good</h2>
+                    <h2>€7,99</h2>
+
+                </div>
+                <div class="clear"></div>
+                <div class="pknop">Pick this plan</div>
+                <div class="dptekst">Downgrade or upgrade at any time</div>
+            </div>
+            <div id="tabs-2">
+                <div class="tab_text_box">
+                    <h2>Cancel at any time</h2>
+                    <h2>Unlimited films and TV</h2>
+                    <h2>Screens</h2>
+                    <h2>Resolution</h2>
+                    <h2>Video quality</h2>
+                    <h2>Monthly price</h2>
+
+                </div>
+                <div class="tab_text_box2">
+                    <h2>V</h2>
+                    <h2>V</h2>
+                    <h2>3</h2>
+                    <h2>4K</h2>
+                    <h2>Perfect</h2>
+                    <h2>€10,99</h2>
+
+                </div>
+                <div class="pknop">Pick this plan</div>
+                <div class="dptekst">Downgrade or upgrade at any time</div>
+            </div>
+            <div id="tabs-3">
+                <div class="tab_text_box">
+                    <h2>Cancel at any time</h2>
+                    <h2>Unlimited films and TV</h2>
+                    <h2>Screens</h2>
+                    <h2>Resolution</h2>
+                    <h2>Video quality</h2>
+                    <h2>Monthly price</h2>
+
+                </div>
+                <div class="tab_text_box2">
+                    <h2>V</h2>
+                    <h2>V</h2>
+                    <h2>4</h2>
+                    <h2>4K+HDR</h2>
+                    <h2>Best</h2>
+                    <h2>€13,99</h2>
+
+                </div>
+                <div class="pknop">Pick this plan</div>
+                <div class="dptekst">Downgrade or upgrade at any time</div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.5.4/video.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+</body>
+
+
+</html>

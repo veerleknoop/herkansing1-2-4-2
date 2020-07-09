@@ -1,0 +1,850 @@
+        .container {
+            width: 300px;
+            height: 70px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 300px;
+        }
+        
+        .container span {
+            color: #ED2517;
+            text-transform: uppercase;
+            display: block;
+        }
+        
+        .animatie {
+            font-size: 2em;
+            font-family: 'Bebas Neue', cursive;
+            animation: fadeIn 7s;
+        }
+        
+        .animatie2 {
+            font-size: 3em;
+            font-family: 'Bebas Neue', cursive;
+            position: relative;
+            animation: text 3s 1;
+            margin-top: -55px;
+            margin-left: -25px;
+        }
+        
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: -10px;
+            }
+            30% {
+                margin-top: -100px;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0.2;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        header {
+            background-color: black;
+            height: 575px;
+            padding-top: 150px;
+        }
+        
+        nav {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 1;
+        }
+        
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            float: left;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        
+        #login {
+            background-image: url(../img/login\ btn.png);
+            width: 150px;
+            height: 70px;
+            float: right;
+            margin-right: 250px;
+            margin-top: 30px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        
+        #tekstbox {
+            width: 500px;
+            height: 350px;
+            margin-left: 100px;
+            float: left;
+        }
+        
+        #netflixtitel {
+            color: #ED2517;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1em;
+            margin: 0 auto;
+        }
+        
+        #netflixtekst {
+            margin-top: 20px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 2.6em;
+        }
+        
+        #netflixtekst2 {
+            width: 400px;
+            margin-top: 40px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1em;
+        }
+        
+        #tryfree {
+            margin-top: 40px;
+            color: white;
+            width: 200px;
+            background-color: #ED2517;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        #placeholder {
+            background-image: url(../img/stranger.png);
+            height: 577px;
+            width: 900px;
+            float: right;
+            background-repeat: no-repeat;
+        }
+        
+        .modal {
+            height: 2100px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 5;
+        }
+        
+        .modal--hidden {
+            display: none;
+        }
+        
+        .modal-close {
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3em;
+            margin-left: 70%;
+            cursor: pointer;
+        }
+        
+        .modal .video-js .vjs-play-control {
+            background-image: url(../img/play\ btn@2x.png);
+            background-repeat: no-repeat;
+            height: 200px;
+            width: 200px;
+            margin-left: 550px;
+            margin-top: -400px;
+        }
+        
+        .modal .video-js .vjs-mute-control {
+            background-image: url(../img/noun_Volume_568749.png);
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        
+        .modal .video-js .vjs-fullscreen-control {
+            background-image: url(../img/noun_Full\ Screen_1668922.png);
+            background-repeat: no-repeat;
+            margin-left: 10px;
+        }
+        
+        .modal .video-js .vjs-progress-control .vjs-progress-holder {
+            margin-left: 60px;
+        }
+        
+        #player-1 {
+            position: absolute;
+            top: 5%;
+            left: 25%;
+        }
+        
+        .video-player {
+            top: 0;
+            width: 500px;
+            height: 200px;
+            margin-left: -10%;
+        }
+        
+        .modal .video-forward {
+            background-image: url(../img/forward\ btn.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 45%;
+            margin-left: 120%;
+            position: absolute;
+        }
+        
+        .modal .video-play-btn {
+            background-image: url(../img/play\ btn.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            margin-top: -80%;
+            margin-left: 90%;
+        }
+        
+        .video-forward {
+            position: absolute;
+            background-image: url(../img/forward\ btn.png);
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            left: 20%;
+            top: CALC(70% - 20px);
+            cursor: pointer;
+            display: none;
+        }
+        
+        .video-player:hover .button-visibility {
+            display: inline-block;
+        }
+        
+        .video-play-btn {
+            position: absolute;
+            background-image: url(../img/play\ btn.png);
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            left: 20%;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .video-player:hover .button-visibility2 {
+            display: inline-block;
+        }
+        
+        .watch-trailer {
+            height: 100px;
+            width: 300px;
+            background-image: url(../img/play\ btn\ \(open\ modal\).png);
+            background-repeat: no-repeat;
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            transform: translate(150%, -300%);
+            top: 50%;
+            left: 50%;
+        }
+        
+        .watch-trailer:hover {
+            background-image: url(../img/red\ play\ btn.png);
+            background-repeat: no-repeat;
+        }
+        
+        .color-overlay {
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background-image: linear-gradient(to right, currentColor 2%, transparent 30%);
+        }
+        
+        .video-js .vjs-big-play-button {
+            display: none;
+        }
+        
+        .video-js .vjs-play-control {
+            display: none;
+        }
+        
+        .video-js .vjs-progress-control .vjs-progress-holder {
+            margin-left: -10px;
+        }
+        
+        .video-js .vjs-progress-control {
+            color: #ED2517;
+            font-size: 1.5em;
+        }
+        
+        .video-js .vjs-control-bar {
+            background: transparent;
+        }
+        
+        .vjs-button>.vjs-icon-placeholder:before {
+            display: none;
+        }
+        
+        #video-wrap {
+            width: 700px;
+        }
+        
+        #stop {
+            font-size: 1.2em;
+            color: #ED2517;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            margin-top: 100px;
+            text-align: center;
+        }
+        
+        #watch {
+            font-size: 2.6em;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            height: 90px;
+            width: 536px;
+            margin-top: 80px;
+            margin: 0 auto;
+            line-height: 60px;
+        }
+        
+        .playlist {
+            height: 200px;
+            margin-top: 50px;
+            position: relative;
+            width: 80%;
+            top: 0;
+            left: 0;
+            transform: translate(10%, 20%);
+        }
+        
+        .player-active {
+            z-index: 999;
+        }
+        
+        #player-2 {
+            position: absolute;
+            top: 0;
+            left: 10%;
+        }
+        
+        .playlist .video-play-btn {
+            position: absolute;
+            background-image: url(../img/play\ btn.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            top: 50%;
+            left: 55%;
+        }
+        
+        .playlist:hover .video-play-btn .button-visibility {
+            display: inline-block;
+        }
+        
+        .playlist .video-forward {
+            position: absolute;
+            background-image: url(../img/forward\ btn.png);
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            cursor: pointer;
+            top: 50%;
+            left: 70%;
+            display: none;
+        }
+        
+        .playlist:hover .video-forward .button-visibility {
+            display: inline-block;
+        }
+        
+        #player-3 {
+            transform: scale(1.2);
+            position: absolute;
+            top: 0;
+            left: 40%;
+            z-index: 4;
+        }
+        
+        #player-4 {
+            position: absolute;
+            top: 0;
+            right: 0%;
+        }
+        
+        #tftekst {
+            font-family: 'Montserrat', sans-serif;
+            width: 500px;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 300px;
+        }
+        
+        #tfknop {
+            margin-top: 50px;
+            margin: 0 auto;
+            height: 50px;
+            width: 155px;
+            color: white;
+            background-color: #ED2517;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        footer {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            margin-top: 100px;
+        }
+        
+        #choose {
+            color: white;
+            width: 800px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 2.6em;
+            margin: 0 auto;
+        }
+        
+        #tabs {
+            height: 700px;
+            width: 900px;
+            background-color: rgb(26, 25, 25);
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 200px;
+        }
+        
+        .tab_text_box {
+            float: left;
+            width: 300px;
+            margin-left: 100px;
+        }
+        
+        .tab_text_box2 {
+            float: right;
+            width: 300px;
+            height: 400px;
+            margin-right: 100px;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .tab_text_box2 h2 {
+            font-size: 1.4em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: red;
+            margin-top: 40px;
+        }
+        
+        #tabs a:active {
+            background-color: red;
+        }
+        
+        #tabs a {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.3em;
+            float: left;
+            margin-left: 150px;
+            text-decoration: none;
+            margin-bottom: 40px;
+            margin-top: 30px;
+            display: block;
+        }
+        
+        .pknop {
+            background-color: red;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            height: 50px;
+            width: 200px;
+            font-size: 1.3em;
+            width: 200px;
+            cursor: pointer;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        
+        .dptekst {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width:1550px) {
+            nav a {
+                margin-left: 60px;
+            }
+            #placeholder {
+                width: 800px;
+            }
+        }
+        
+        @media screen and (max-width:1450px) {
+            nav a {
+                margin-left: 10px;
+            }
+            #my-video1 {
+                height: 700px;
+                width: 1200px;
+                margin-left: -100px;
+            }
+            #placeholder {
+                width: 600px;
+            }
+            .watch-trailer {
+                margin-left: -20%;
+            }
+            .modal .video-forward {
+                margin-top: -70%;
+            }
+        }
+        
+        @media screen and (max-width:1220px) {
+            .container {
+                margin-left: 40px;
+            }
+            #placeholder {
+                width: 500px;
+            }
+            .watch-trailer {
+                margin-left: -45%;
+            }
+            #my-video1 {
+                height: 600px;
+                width: 1000px;
+                margin-left: -100px;
+            }
+            .modal .video-forward {
+                margin-top: -90%;
+            }
+            .playlist {
+                width: 80%;
+                margin-left: -5%;
+            }
+            #player-3 {
+                margin-left: -20%;
+            }
+            #player-4 {
+                right: 0%;
+            }
+        }
+        
+        @media screen and (max-width:1110px) {
+            #placeholder {
+                width: 500px;
+            }
+            .watch-trailer {
+                margin-left: -45%;
+            }
+            #tekstbox {
+                margin-left: 50px;
+            }
+        }
+        
+        @media screen and (max-width:1000px) {
+            #login {
+                width: 120px;
+            }
+            #tabs {
+                width: 800px;
+            }
+            #placeholder {
+                width: 450px;
+            }
+            .watch-trailer {
+                margin-left: -60%;
+            }
+            #netflixtekst {
+                font-size: 1.5em;
+            }
+            #tekstbox {
+                margin-left: 50px;
+                width: 100px;
+            }
+            #my-video1 {
+                height: 500px;
+                width: 800px;
+                margin-left: -100px;
+            }
+            .modal .video-forward {
+                margin-top: -110%;
+                margin-left: 20%;
+            }
+            .container {
+                width: 120px;
+            }
+        }
+        
+        @media screen and (max-width:820px) {
+            #netflixtekst2 {
+                width: 240px;
+            }
+            #tekstbox {
+                margin-left: 50px;
+                width: 100px;
+            }
+            #choose {
+                font-size: 2.1em;
+                width: 650px;
+            }
+            .tab_text_box {
+                width: 100px;
+                margin-right: 300px;
+                margin-top: 10px;
+            }
+            .tab_text_box2 {
+                width: 100px;
+                margin-left: 20px;
+                margin-top: -63%;
+            }
+            #tabs {
+                width: 650px;
+            }
+            .tab_text_box2 {
+                width: 200px;
+            }
+            .tab_text_box {
+                width: 200px;
+            }
+            #tabs a {
+                margin-left: 20px;
+            }
+            #my-video1 {
+                height: 350px;
+                width: 600px;
+                margin-left: -20px;
+            }
+            .modal .video-forward {
+                margin-top: -160%;
+                margin-left: 10%;
+            }
+            .container {
+                width: 50px;
+            }
+            #login {
+                margin-left: 10px;
+            }
+            .playlist {
+                width: 90%;
+                margin-left: -5%;
+            }
+            #player-2 {
+                transform: scale(0.7);
+                margin-left: -20%;
+            }
+            #player-3 {
+                transform: scale(0.7);
+                margin-left: -35%;
+            }
+            #player-4 {
+                right: 0%;
+                transform: scale(0.7);
+            }
+        }
+        
+        @media screen and (max-width:720px) {
+            nav a {
+                margin-left: 50;
+                font-size: 0.8em;
+            }
+            #netflixtekst {
+                font-size: 1.2em;
+            }
+            #netflixtekst2 {
+                width: 200px;
+                font-size: 0.8em;
+            }
+            #choose {
+                font-size: 1.3em;
+                width: 450px;
+                margin-left: 100px;
+            }
+            #tabs {
+                width: 650px;
+                height: 800px;
+            }
+            #login {
+                width: 120px;
+            }
+            h2 {
+                margin-left: 10px;
+                width: 100px;
+            }
+            .tab_text_box {
+                width: 100px;
+                margin-left: 150px;
+                margin-top: 10px;
+            }
+            .tab_text_box2 {
+                width: 100px;
+                height: 400px;
+                margin-right: 10px;
+            }
+            #tftekst {
+                margin-top: 170px;
+            }
+            .container {
+                margin-left: 5px;
+                width: 80px;
+            }
+            .animatie {
+                margin-left: 25px;
+                width: 90px;
+            }
+            .animatie2 {
+                margin-left: 5px;
+                width: 90px;
+            }
+            #tryfree {
+                width: 100px;
+            }
+            #tekstbox {
+                width: 100px;
+            }
+        }
+        
+        @media screen and (max-width:650px) {
+            nav a {
+                font-size: 0.5em;
+            }
+            #placeholder {
+                width: 350px;
+            }
+            .watch-trailer {
+                margin-left: -100%;
+            }
+            #watch {
+                width: 350px;
+                margin-left: 100px;
+            }
+            #tabs {
+                width: 450px;
+                height: 800px;
+            }
+            .tab_text_box2 {
+                width: 100px;
+                margin-top: -110%;
+            }
+            .tab_text_box {
+                width: 100px;
+                margin-left: 50px;
+            }
+            #login {
+                width: 120px;
+            }
+            #netflixtekst2 {
+                width: 100px;
+            }
+            #choose {
+                margin-left: 20px;
+            }
+            #tftekst {
+                width: 300px;
+            }
+            #my-video1 {
+                height: 350px;
+                width: 400px;
+                margin-left: -30px;
+            }
+            .modal .video-forward {
+                margin-top: -280%;
+                margin-left: -60%;
+            }
+            .playlist {
+                width: 120%;
+                margin-left: -20%;
+            }
+            #player-2 {
+                transform: scale(0.4);
+            }
+            #player-3 {
+                transform: scale(0.4);
+            }
+            #player-4 {
+                transform: scale(0.4);
+            }
+        }
+        
+        @media screen and (max-width:500px) {
+            #placeholder {
+                width: 250px;
+                margin-left: -50px;
+            }
+            .watch-trailer {
+                margin-left: -80%;
+                width: 170px;
+            }
+            #watch {
+                width: 350px;
+                margin-left: 50px;
+            }
+            #tabs {
+                width: 350px;
+                height: 800px;
+            }
+            #choose {
+                margin-left: 10px;
+                width: 400px;
+            }
+            #tftekst {
+                width: 200px;
+            }
+            .playlist {
+                width: 130%;
+                margin-left: -30%;
+            }
+            #player-2 {
+                transform: scale(0.3);
+            }
+            #player-3 {
+                margin-left: -40%;
+                transform: scale(0.3);
+            }
+            #player-4 {
+                transform: scale(0.3);
+            }
+        }
